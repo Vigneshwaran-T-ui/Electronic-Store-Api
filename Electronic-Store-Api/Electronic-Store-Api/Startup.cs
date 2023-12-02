@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Electronic_Store_Api.MappingProfiles;
+using Electronic_Store_Api.Services;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,11 +22,19 @@ namespace Employee_Details
         public void ConfigureServices(IServiceCollection services)
         {
             // Add your services here
-            //services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<ILoginService, LoginService>();
+            services.AddLogging();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Electronics Store API", Version = "v1" });
+            });
+
+            services.AddAutoMapper(typeof(Startup));
+
+            var mapperConfig = new MapperConfiguration(config =>
+            {
+                config.AddProfile<LoginUserProfile>();
             });
 
             services.AddControllers();
