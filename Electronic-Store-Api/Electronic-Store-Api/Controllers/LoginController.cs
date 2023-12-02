@@ -4,6 +4,7 @@ using Electronic_Store_Api.Services;
 using Microsoft.AspNetCore.Authorization;
 using Electronic_Store_Api.DataModels;
 using Electronic_Store_Api.ViewModels;
+using Electronic_Store_Api.Common;
 
 namespace Electronic_Store_Api.Controllers
 {
@@ -29,12 +30,20 @@ namespace Electronic_Store_Api.Controllers
         [HttpPost]
         public IActionResult EsUsersLogin([FromBody] Login loginDetails) 
         {
+            TraceLog.LogActivity(ConstantProp.controllerIn, 0, "", RouteData, "", "");
             var user = _LoginService.EsUsersLogin(loginDetails, out _status, out _message);
             if (user == null)
             {
                 return BadRequest(new { message = "Username or password is incorrect" });
             }
-            return Ok(user);
+            TraceLog.LogActivity(ConstantProp.controllerIn, 0, "", RouteData, "", "");
+
+            return (ActionResult)this.StatusCode(200, (object)new
+            {
+                data = user,
+                status = this._status,
+                message = this._message
+            });
         }
     }
  

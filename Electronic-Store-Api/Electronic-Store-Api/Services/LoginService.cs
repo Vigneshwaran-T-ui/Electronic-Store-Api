@@ -30,6 +30,8 @@ namespace Electronic_Store_Api.Services
 
         public User EsUsersLogin(Login login, out int status, out string message)
         {
+            string inputParam = TraceLog.appendSingleObject(login);
+            TraceLog.LogActivity(ConstantProp.serviceIn, 0, "", null, "Login Intiated", inputParam);
             var user = new User();
             try
             {
@@ -54,6 +56,7 @@ namespace Electronic_Store_Api.Services
             }
             catch (Exception ex)
             {
+                TraceLog.LogError(Convert.ToString(0), "", "Login Intiated", ex, inputParam);
                 user = null;
                 status = -1;
                 message = ex.Message;

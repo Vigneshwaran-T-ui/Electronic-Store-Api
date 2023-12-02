@@ -46,3 +46,6 @@ D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-A
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\Electronic-Store-Api.pdb
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\Electronic-Store-Api.genruntimeconfig.cache
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\ref\Electronic-Store-Api.dll
+D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\bin\Release\net6.0\Newtonsoft.Json.dll
+D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\bin\Release\net6.0\Serilog.dll
+D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\bin\Release\net6.0\Serilog.Sinks.File.dll

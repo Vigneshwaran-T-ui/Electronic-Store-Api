@@ -15,6 +15,9 @@ D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-A
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Serilog.dll
+D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Serilog.Sinks.File.dll
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Personal\Electronic Store Application\Electronic-Store-Api\Electronic-Store-Api\Electronic-Store-Api\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
