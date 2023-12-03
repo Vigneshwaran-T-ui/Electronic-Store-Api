@@ -32,10 +32,10 @@ namespace Electronic_Store_Api.Controllers
         {
             TraceLog.LogActivity(ConstantProp.controllerIn, 0, "", RouteData, "", "");
             var user = _LoginService.EsUsersLogin(loginDetails, out _status, out _message);
-            if (user == null)
-            {
-                return BadRequest(new { message = "Username or password is incorrect" });
-            }
+            //if (user == null)
+            //{
+            //    return BadRequest(new { message = "Username or password is incorrect" });
+            //}
             TraceLog.LogActivity(ConstantProp.controllerIn, 0, "", RouteData, "", "");
 
             return (ActionResult)this.StatusCode(200, (object)new

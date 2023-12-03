@@ -48,10 +48,10 @@ namespace Electronic_Store_Api.Services
 
                     status = parameters.Get<Int16>(ConstantProp.status);
                     message = parameters.Get<string>(ConstantProp.errMsg);
-                    if (status != 2)
-                    {
-                        user = null;
-                    }
+                    //if (status != 2)
+                    //{
+                    //    user = null;
+                    //}
                 }
             }
             catch (Exception ex)
